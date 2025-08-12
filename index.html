@@ -7,14 +7,128 @@
     <link rel="stylesheet" href="css/materialize.css">
 </head>
 <body>
-    <div class="container yellow lighten-3 z-depth-4">
-        <h1 class="center-align text-darken-4" >Hello World</h1>
-        <p class="right-align">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eius rerum cum vero eligendi dolor, laudantium laborum voluptatem quod voluptatum numquam sapiente tenetur expedita! Ex, quam! Doloremque accusamus atque nemo odio error ea, eligendi sed laborum? Dignissimos vitae veniam quibusdam, in vel error nam. Repudiandae recusandae assumenda atque esse libero!</p>
-        <a class="btn-flat purple orange-text" href="">button</a >
-            <a class="btn purple orange-text" href="">button</a >
-                <a class="btn-small purple orange-text" href="">button</a >
-                    <a class="btn-large purple orange-text" href="">button</a >
-                        <a class="btn btn-floating purple orange-text pulse" href=""></a >
+    <div class="container">
+        <h1>slider</h1>
+        <div class="slider">
+            <ul class="slides">
+                <li><img class="responsive-img" src="img/IMG-5.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/IMG-4.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/IMG-3.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/IMG-2.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/IMG-1.jpg" alt=""></li>
+            </ul>
+        </div>
     </div>
+
+    <div class="container">
+        <h1 class="purple-text ">Available Items</h1>
+        <p>these items have been restocked</p>
+        <div class="row">
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img class="responsive-img materialboxed" src="img/pic2.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="purple-text">Purple Cap by Max G</span>
+                        <P>Designed with the finest silk materials, just for you.</P>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn btn-small purple" href="">Buy Now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="responsive-img materialboxed" src="img/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="green-text">Green Bag by Max G</span>
+                        <P>Designed with the finest silk materials, just for you.</P>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn btn-small green" href="">Buy Now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img class="responsive-img materialboxed" src="img/pic4.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="grey-text">Airforce by Max G</span>
+                        <P>Designed with the finest silk materials, just for you.</P>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn btn-small grey" href="">Buy Now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img class="responsive-img materialboxed" src="img/pic5.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="grey-text">necklace by Max G</span>
+                        <P>Designed with the finest silk materials, just for you.</P>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn btn-small grey" href="">Buy Now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img class="responsive-img materialboxed" src="img/pic6.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="brown-text">Cropped Tee by Max G</span>
+                        <P>Designed with the finest silk materials, just for you.</P>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn btn-small lighten-1 brown" href="">Buy Now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img class="responsive-img materialboxed" src="img/pic7.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="yellow-text">Timberland by Max G</span>
+                        <P>Designed with the finest silk materials, just for you.</P>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn btn-small darken-3 yellow" href="">Buy Now</a>
+                        <a href="">Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
+<script src="js/JQuery.js"></script>
+<script src="js/materialize.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.materialboxed').materialbox();
+        $('.slider').slider({
+            height:300,
+            indicators:false,
+            interval:2000
+        });
+    })
+</script>
 </html>
